@@ -21,26 +21,41 @@
             <Border Width="170" Height="170">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#ffc554" Offset="0.0"/>
+                        <GradientStop Color="#317c3d" Offset="0.0"/>
                         <GradientStop Color="#ffb73a" Offset="1.2"/>
                     </LinearGradientBrush>
                 </Border.Background>
+                <Image Width="161" Height="164"
+                           Source="/Images/Spotify.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                </Image>
             </Border>
             <Border Width="170" Height="170">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#ffc554" Offset="0.0"/>
+                        <GradientStop Color="#aa4220" Offset="0.0"/>
                         <GradientStop Color="#ffb73a" Offset="1.2"/>
                     </LinearGradientBrush>
                 </Border.Background>
+                <Image Width="161" Height="164"
+                           Source="/Images/netflix.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                </Image>
             </Border>
             <Border Width="170" Height="170">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#ffc554" Offset="0.0"/>
+                        <GradientStop Color="#5d469c" Offset="0.0"/>
                         <GradientStop Color="#ffb73a" Offset="1.2"/>
                     </LinearGradientBrush>
                 </Border.Background>
+                <Image Width="161" Height="164"
+                           Source="/Images/prime.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                </Image>
             </Border>
         </StackPanel>
         <StackPanel>
@@ -54,13 +69,37 @@
                    Margin="0,0,0,10"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <Border Width="150" Height="150" Margin="0"
-                        Background="#844eff" CornerRadius="10"/>
+                        Background="#031538" CornerRadius="10">
+                   <Image Width="141" Height="144"
+                          Source="/Images/disney-plus.png"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center">
+                    </Image>
+                </Border>
                 <Border Width="150" Height="150"
-                        Background="#54ee54" CornerRadius="10"/>
+                        Background="#3d6dcb" CornerRadius="10">
+                    <Image Width="141" Height="144"
+                          Source="/Images/telegram.png"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center">
+                    </Image>
+                </Border>
                 <Border Width="150" Height="150"
-                        Background="#15df92" CornerRadius="10"/>
+                        Background="#3dcb5a" CornerRadius="10">
+                    <Image Width="141" Height="144"
+                          Source="/Images/whatsapp.png"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center">
+                    </Image>
+                </Border>
                 <Border Width="150" Height="150"
-                        Background="#10ad30" CornerRadius="10"/>
+                        Background="#3d6dcb" CornerRadius="10">
+                    <Image Width="141" Height="144"
+                          Source="/Images/linkedin.png"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center">
+                    </Image>
+                </Border>
             </StackPanel>
 
         </StackPanel>

@@ -9,13 +9,13 @@
     <StackPanel>
         <TextBlock Text="Discover" Foreground="White"
                    FontSize="28" HorizontalAlignment="Left"
-                   Margin="0,0,0,20"/>
+                   Margin="0,0,0,20" FontFamily="Fonts/#Roboto Slab"/>
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
             <Border Width="400" Height="200">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#13174b" Offset="0.0"/>
                         <GradientStop Color="#3aa0ff" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
@@ -25,26 +25,20 @@
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Random Text&#x0a;Within this"
+                        <TextBlock Text="Start Today&#x0a;Code Now"
                                Foreground="White" FontSize="28"
-                               Margin="20,10,10,0"/>
+                               Margin="20,10,10,0" 
+                               FontFamily="Fonts/#Roboto Slab Light"/>
                         <TextBlock Text="Get Started Today!"
                                Foreground="White" FontSize="18"
                                Margin="20,10,10,0"/>
                     </StackPanel>
 
                     <Image Width="161" Height="164"
-                           Source="/Images/Minion.jpg"
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,20">
-                        <Image.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="0"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Image.RenderTransform>
+                           Source="/Images/visual-studio.png"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center" Margin="225,0,0,0">
+                        
                     </Image>
                 </Grid>
             </Border>
@@ -52,10 +46,15 @@
                     CornerRadius="10" Margin="40,0,0,0">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#ffc554" Offset="0.0"/>
+                        <GradientStop Color="#d19898" Offset="0.0"/>
                         <GradientStop Color="#ffb73a" Offset="1.2"/>
                     </LinearGradientBrush>
                 </Border.Background>
+                <Image Width="193" Height="166"
+                           Source="/Images/intellij.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                </Image>
             </Border>
         </StackPanel>
         <StackPanel>
@@ -69,13 +68,37 @@
                    Margin="0,0,0,10"/>
             <StackPanel Orientation="Horizontal">
                 <Border Width="150" Height="150" Margin="0"
-                        Background="#844eff" CornerRadius="10"/>
+                        Background="#844eff" CornerRadius="10">
+                    <Image Width="193" Height="166"
+                           Source="/Images/android-studio.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </Image>
+                </Border>
                 <Border Width="150" Height="150"
-                        Background="#54ee54" CornerRadius="10"/>
+                        Background="#212538" CornerRadius="10">
+                    <Image Width="193" Height="166"
+                           Source="/Images/visual-studio-code.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </Image>
+                </Border>
                 <Border Width="150" Height="150"
-                        Background="#15df92" CornerRadius="10"/>
+                        Background="#15df92" CornerRadius="10">
+                    <Image Width="193" Height="166"
+                           Source="/Images/pycharm.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </Image>
+                </Border>
                 <Border Width="150" Height="150"
-                        Background="#10ad30" CornerRadius="10"/>
+                        Background="#1a2454" CornerRadius="10">
+                    <Image Width="143" Height="156"
+                           Source="/Images/eclipse.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                    </Image>
+                </Border>
             </StackPanel>
 
         </StackPanel>

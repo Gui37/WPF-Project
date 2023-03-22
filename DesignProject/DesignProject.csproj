@@ -129,6 +129,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Fonts\RobotoSlab-VariableFont_wght.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,7 +139,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Fonts\" />
     <Folder Include="MVVM\Model\" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +146,33 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Minion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\disney-plus.png" />
+    <Resource Include="Images\netflix.png" />
+    <Resource Include="Images\prime.png" />
+    <Resource Include="Images\Spotify.png" />
+    <Resource Include="Images\telegram.png" />
+    <Resource Include="Images\whatsapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Abstergo.png" />
+    <Resource Include="Images\android-studio.png" />
+    <Resource Include="Images\discord.png" />
+    <Resource Include="Images\epic-games.png" />
+    <Resource Include="Images\intellij.png" />
+    <Resource Include="Images\steam.png" />
+    <Resource Include="Images\visual-studio-code.png" />
+    <Resource Include="Images\visual-studio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eclipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pycharm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

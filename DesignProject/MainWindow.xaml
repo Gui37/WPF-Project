@@ -24,30 +24,47 @@
                 <RowDefinition Height="70"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Logo" VerticalAlignment="Center"
-                   HorizontalAlignment="Left" Foreground="White"
-                   FontSize="24" Margin="25,0,0,0"/>
+            
+            <Border Width="226" Height="60" >
+                <Grid>
+                <Image Width="60" Height="50"
+                      Source="/Images/abstergo.png"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center" RenderTransformOrigin="-0.824,0.521">
+                </Image>
+                    <StackPanel>
+                        <TextBlock Text=" Simple App" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center" Foreground="White"
+                   FontSize="28" Margin="40,10,0,0"
+                   FontFamily="Fonts/#Roboto Slab Medium"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
 
             <StackPanel Grid.Row="1">
                 <RadioButton Content="Home" Height="50"
                              Foreground="white"
-                             FontSize="20" 
+                             FontSize="20"
+                             FontFamily="Fonts/#Roboto Slab Light"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
                 <RadioButton Content="Apps" Height="50"
                              Foreground="white"
                              FontSize="20" 
+                             FontFamily="Fonts/#Roboto Slab Light"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding AppsViewCommand}"/>
                 <RadioButton Content="Discovery" Height="50"
                              Foreground="white"
                              FontSize="20" 
+                             FontFamily="Fonts/#Roboto Slab Light"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding DiscoveryViewCommand}"/>
                 <RadioButton Content="Featured" Height="50"
                              Foreground="white"
                              FontSize="20" 
+                             FontFamily="Fonts/#Roboto Slab Light"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding FeaturedViewCommand}"/>
             </StackPanel>
