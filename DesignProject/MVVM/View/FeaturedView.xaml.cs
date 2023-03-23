@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,19 @@ namespace DesignProject.MVVM.View
         public FeaturedView()
         {
             InitializeComponent();
+        }
+
+        private void nttp_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                Console.WriteLine("\nTrying to launch Notepad++ using your login information...");
+                Process.Start("C:\\Program Files (x86)\\Notepad++\\notepad++.exe");
+            }
+            catch (Win32Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

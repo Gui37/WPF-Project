@@ -28,7 +28,8 @@
                 <Image Width="161" Height="164"
                            Source="/Images/Spotify.png"
                            HorizontalAlignment="Center"
-                           VerticalAlignment="Center">
+                           VerticalAlignment="Center"
+                            MouseUp="spotify_MouseUp">
                 </Image>
             </Border>
             <Border Width="170" Height="170">

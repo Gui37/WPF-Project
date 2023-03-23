@@ -45,9 +45,9 @@
             <Border Width="200" Height="200" 
                     CornerRadius="10" Margin="40,0,0,0">
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#d19898" Offset="0.0"/>
-                        <GradientStop Color="#ffb73a" Offset="1.2"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#c22a55" Offset="0.0"/>
+                        <GradientStop Color="#3d2ac2" Offset="1.1"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Image Width="193" Height="166"
@@ -68,7 +68,7 @@
                    Margin="0,0,0,10"/>
             <StackPanel Orientation="Horizontal">
                 <Border Width="150" Height="150" Margin="0"
-                        Background="#844eff" CornerRadius="10">
+                        Background="#16de23" CornerRadius="10">
                     <Image Width="193" Height="166"
                            Source="/Images/android-studio.png"
                            HorizontalAlignment="Center"
@@ -77,11 +77,14 @@
                 </Border>
                 <Border Width="150" Height="150"
                         Background="#212538" CornerRadius="10">
-                    <Image Width="193" Height="166"
+                    <Image Width="153" Height="150"
                            Source="/Images/visual-studio-code.png"
                            HorizontalAlignment="Center"
-                           VerticalAlignment="Center">
+                           VerticalAlignment="Center"
+                           MouseUp="vsc_MouseUp">
+                        
                     </Image>
+                   
                 </Border>
                 <Border Width="150" Height="150"
                         Background="#15df92" CornerRadius="10">

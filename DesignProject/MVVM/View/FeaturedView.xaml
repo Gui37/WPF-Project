@@ -5,9 +5,123 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DesignProject.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="#2f2e30">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Productivity" Foreground="White"
+                   FontSize="28" HorizontalAlignment="Left"
+                   Margin="0,0,0,20" FontFamily="Fonts/#Roboto Slab"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Border Width="400" Height="200">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#c25c2a" Offset="0.0"/>
+                        <GradientStop Color="#381b0d" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10"
+                                      Rect="0,0,400,200"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Start Today&#x0a;Write Something"
+                               Foreground="White" FontSize="28"
+                               Margin="20,10,10,0" 
+                               FontFamily="Fonts/#Roboto Slab Light"/>
+                        <TextBlock Text="Organize your docs!"
+                               Foreground="White" FontSize="18"
+                               Margin="20,10,10,0"/>
+                    </StackPanel>
+
+                    <Image Width="161" Height="164"
+                           Source="/Images/microsoft-office.png"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center" Margin="225,0,0,0">
+
+                    </Image>
+                </Grid>
+            </Border>
+            <Border Width="200" Height="200" 
+                    CornerRadius="10" Margin="40,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#1b1280" Offset="0.0"/>
+                        <GradientStop Color="#0a4102" Offset="1.2"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Image Width="193" Height="166"
+                           Source="/Images/bluestacks.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+                </Image>
+            </Border>
+        </StackPanel>
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0" />
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Other Stuff" Foreground="White"
+                   FontSize="18" HorizontalAlignment="Left"
+                   Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal">
+                <Border Width="400" Height="150" Margin="0"
+                         CornerRadius="10">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#e4db95" Offset="0.0"/>
+                            <GradientStop Color="#c25c2a" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10"
+                                      Rect="0,0,400,200"/>
+                    </Border.Clip>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="API Tester&#x0a;Restful and Others"
+                               Foreground="White" FontSize="28"
+                               Margin="20,10,10,0" 
+                               FontFamily="Fonts/#Roboto Slab Light"/>
+                            <TextBlock Text="Get Started Today!"
+                               Foreground="White" FontSize="18"
+                               Margin="20,10,10,0"/>
+                        </StackPanel>
+
+                        <Image Width="150" Height="150"
+                           Source="/Images/postman.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center" Margin="225,0,0,0">
+
+                        </Image>
+                    </Grid>
+                </Border>
+                <Border Width="200" Height="150"
+                        Margin="40,0,0,0"
+                        CornerRadius="10">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#075600" Offset="0.0"/>
+                            <GradientStop Color="#42e9f1" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10"
+                                      Rect="0,0,400,200"/>
+                    </Border.Clip>
+                    <Image Width="153" Height="150"
+                           Source="/Images/notepad++.png"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           MouseUp="nttp_MouseUp">
+
+                    </Image>
+
+                </Border>
+            </StackPanel>
+
+        </StackPanel>
+    </StackPanel>
 </UserControl>

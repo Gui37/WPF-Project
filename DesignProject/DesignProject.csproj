@@ -142,12 +142,6 @@
     <Folder Include="MVVM\Model\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\lamp.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Minion.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\disney-plus.png" />
     <Resource Include="Images\netflix.png" />
     <Resource Include="Images\prime.png" />
@@ -163,7 +157,6 @@
     <Resource Include="Images\android-studio.png" />
     <Resource Include="Images\discord.png" />
     <Resource Include="Images\epic-games.png" />
-    <Resource Include="Images\intellij.png" />
     <Resource Include="Images\steam.png" />
     <Resource Include="Images\visual-studio-code.png" />
     <Resource Include="Images\visual-studio.png" />
@@ -173,6 +166,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\pycharm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\intellij.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bluestacks.png" />
+    <Resource Include="Images\microsoft-office.png" />
+    <Resource Include="Images\notepad++.png" />
+    <Resource Include="Images\postman.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

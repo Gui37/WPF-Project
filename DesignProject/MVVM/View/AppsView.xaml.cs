@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,19 @@ namespace DesignProject.MVVM.View
         public AppsView()
         {
             InitializeComponent();
+        }
+
+        private void spotify_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                Console.WriteLine("\nTrying to launch Spotify");
+              ///  Process.Start("C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\code.exe");
+            }
+            catch (Win32Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
